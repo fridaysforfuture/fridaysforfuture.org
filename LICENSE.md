@@ -1,2 +1,2 @@
 
-Copyright (C) 2019 lina-hs
+Copyright (C) 2019 FridaysForFuture
