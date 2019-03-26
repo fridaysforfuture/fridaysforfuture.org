@@ -69,3 +69,17 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+.main-content {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    max-width: 900px;
+}
+
+.wrapper, .footer-wrapper {
+    overflow: auto;
+    margin: 0 auto;
+}
