@@ -1,0 +1,14 @@
+/*
+    Primary Colour: #1a733f
+    Secondary Colour: #8dd1e8
+    Accent Colour: #73231a
+    Font Family: Merriweather Sans, Roboto Sans
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Merriweather+Sans');
+
+body {
+    margin: 0;
+    background-color: #f8f8ff;
+    font-family: 'Merriweather Sans';
+}
