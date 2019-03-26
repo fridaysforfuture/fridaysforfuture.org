@@ -12,3 +12,24 @@ body {
     background-color: #f8f8ff;
     font-family: 'Merriweather Sans';
 }
+
+.nav-top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #1a733f;
+    color: #fff;
+    z-index: 1;
+}
+.nav-part {
+    float: left;
+    width: calc(100%/4);
+    box-sizing: border-box;
+    padding: 10px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.nav-part:hover {
+    cursor: pointer;
+    background-color: #183824;
+}
