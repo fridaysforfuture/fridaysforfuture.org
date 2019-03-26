@@ -83,3 +83,52 @@ body {
     overflow: auto;
     margin: 0 auto;
 }
+
+.footer {
+    background-color: #222;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-wrapper {
+    max-width: 300px;
+}
+
+.footer-content {
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 8.72px;
+}
+
+.footer-social-container {
+    margin-bottom: 10px;
+}
+.footer-social {
+    margin: 0 5px;
+}
+a.footer-social {
+    text-decoration: none;
+}
+
+.social-facebook {
+    color: #3b5998;
+}
+.social-facebook:hover {
+    color: #8b9dc3;
+}
+.social-twitter {
+    color: #1DA1F2;
+}
+.social-twitter:hover {
+    color: #F5F8FA;
+}
+.social-instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.social-instagram:hover {
+    background: radial-gradient(circle at 33% 100%, #ff3be7 4%, #ff3be7 28%, #03ffe8 62%, #F15245 85%, #FED373);
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
