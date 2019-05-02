@@ -10,7 +10,8 @@
 body {
     margin: 0;
     background-color: #f8f8ff;
-    font-family: 'Merriweather Sans';
+    font-family: 'Merriweather Sans', Arial, sans-serif;
+    font-size: 1em;
 }
 
 .nav-top {
@@ -20,6 +21,10 @@ body {
     background-color: #1a733f;
     color: #fff;
     z-index: 1;
+}
+.nav-top a {
+    color: #fff;
+    text-decoration: none;
 }
 .nav-part {
     float: left;
@@ -45,6 +50,7 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    min-height: 500px;
 }
 .cta {
     border: none;
@@ -54,12 +60,11 @@ body {
     background-color: #1a733f;
     color: white;
     text-transform: uppercase;
-    font-size: 16px;
     margin-top: 20px;
     cursor: pointer;
 }
 .cta:hover {
-    background-color: #183824;
+    color: rgba(255, 255, 255, 0.56);
 }
 
 .logo-center {
@@ -67,7 +72,30 @@ body {
     position: relative;
     top: 50%;
     left: 50%;
+    width: 280px;
     transform: translate(-50%, -50%);
+}
+.logo-center img {
+    width: 100%;
+    height: auto;
+}
+.full-body-read-more {
+    float: left;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    padding: 20px 20px 10px 20px;
+    box-sizing: border-box;
+    text-align: center;
+    transform: translate(-50%, 0);
+    color: white;
+    cursor: pointer;
+    background-color: #1a733f;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+.full-body-read-more:hover {
+    color: rgba(255, 255, 255, 0.56);
 }
 
 .main-content {
@@ -90,7 +118,7 @@ body {
 }
 
 .footer-wrapper {
-    max-width: 300px;
+    max-width: 280px;
 }
 
 .footer-content {
