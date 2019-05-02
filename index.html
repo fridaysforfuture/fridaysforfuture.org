@@ -14,22 +14,29 @@
     <body>
         <nav class="nav-top">
             <div class="wrapper">
-                <div class="nav-part home">fridaysforfuture</div>
+                <a class="nav-part home" onclick="ScrollTo('landing')">fridaysforfuture</a>
                 <div class="nav-part join">join</div>
                 <div class="nav-part list">list</div>
                 <div class="nav-part about">about</div>
             </div>
         </nav>
         <div class="content">
-            <div class="full-body">
+            <div id="landing" class="full-body">
                 <div class="logo-center">
                     <img src="fff_logo.png" />
                     <br />
-                    <button class="cta">find a strike near you</button>
+                    <a href="https://www.fridaysforfuture.org/events/map">
+                        <button class="cta">find a strike near you</button>
+                    </a>
+                </div>
+                <div class="full-body-read-more" onclick="ScrollTo('press')">
+                    Read More
+                    <br />
+                    <i class="fas fa-angle-down fa-2x"></i>
                 </div>
             </div>
             <div class="main wrapper">
-                <div class="main-content">
+                <div class="main-content" id="press">
                     <h2>Press release Fridaysforfuture 21 March 2019</h2>
                     During the week of March 15, there were at least 1.6 million strikers on all 7 continents, in more thn 125 countries and in well over 2000 places.<br>
                     The 1.6million strikers is data gathered by FFF for 40% of countries. <br>
@@ -114,4 +121,5 @@
             </div>
         </footer>
     </body>
+    <script src="script.js"></script>
 </html>
