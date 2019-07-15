@@ -7,15 +7,15 @@ Font Family: Merriweather Sans, Roboto Sans
 /* FONTS */
 @font-face {
   font-family: 'Merriweather Sans';
-  src: local('Merriweather Sans'), local('MerriweatherSans-Regular'), url('fonts/merriweather-sans-v10-latin_latin-ext-300.woff') format('woff');
-  src: local('Merriweather Sans'), local('MerriweatherSans-Regular'), url('fonts/merriweather-sans-v10-latin_latin-ext-300.woff2') format('woff2');
+  src: local('Merriweather Sans'), local('MerriweatherSans-Regular'), url('../fonts/merriweather-sans-v10-latin_latin-ext-300.woff') format('woff');
+  src: local('Merriweather Sans'), local('MerriweatherSans-Regular'), url('../fonts/merriweather-sans-v10-latin_latin-ext-300.woff2') format('woff2');
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
   font-family: 'Merriweather Sans';
-  src: url('fonts/merriweather-sans-v10-latin_latin-ext-300italic.woff') format('woff');
-  src: url('fonts/merriweather-sans-v10-latin_latin-ext-300italic.woff2') format('woff2');
+  src: url('../fonts/merriweather-sans-v10-latin_latin-ext-300italic.woff') format('woff');
+  src: url('../fonts/merriweather-sans-v10-latin_latin-ext-300italic.woff2') format('woff2');
   font-weight: 300;
   font-style: italic;
 }
