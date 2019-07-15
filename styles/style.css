@@ -19,11 +19,30 @@ Font Family: Merriweather Sans, Roboto Sans
   font-weight: 300;
   font-style: italic;
 }
+@font-face {
+  font-family: 'Jost';
+  src: url('../fonts/Jost-600-Semi.eot');
+  src: url('../fonts/Jost-600-Semi.eot?#iefix') format('embedded-opentype'), url('../fonts/Jost-600-Semi.woff') format('woff'), url('../fonts/Jost-600-Semi.woff2') format('woff2'), url('../fonts/Jost-600-Semi.ttf') format('truetype'), url('../fonts/Jost-600-Semi.svg#../fonts/Jost-600-Semi') format('svg');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Jost';
+  src: url('../fonts/Jost-700-Bold.eot');
+  src: url('../fonts/Jost-700-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/Jost-700-Bold.woff') format('woff'), url('../fonts/Jost-700-Bold.woff2') format('woff2'), url('../fonts/Jost-700-Bold.ttf') format('truetype'), url('../fonts/Jost-700-Bold.svg#../fonts/Jost-700-Bold') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
 body {
   margin: 0;
   background-color: #f8f8ff;
   font-family: 'Merriweather Sans';
   font-size: 1em;
+}
+h1,
+h2 {
+  font-family: 'Jost';
+  font-weight: 700;
 }
 .nav-top {
   position: fixed;

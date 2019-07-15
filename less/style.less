@@ -19,12 +19,19 @@ Font Family: Merriweather Sans, Roboto Sans
 @import (reference) 'fontface-mixin.less';
 .font-face('Merriweather Sans', '../fonts/merriweather-sans-v10-latin_latin-ext-300', 300, normal);
 .font-face('Merriweather Sans', '../fonts/merriweather-sans-v10-latin_latin-ext-300italic', 300, italic);
+.font-face('Jost', '../fonts/Jost-600-Semi', 600, normal);
+.font-face('Jost', '../fonts/Jost-700-Bold', 700, normal);
 
 body {
   margin: 0;
   background-color: @bg-offwhite;
   font-family: 'Merriweather Sans';
   font-size: 1em;
+}
+
+h1, h2 {
+  font-family: 'Jost';
+  font-weight: 700;
 }
 
 .nav-top {
