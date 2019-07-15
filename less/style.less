@@ -16,24 +16,9 @@ Font Family: Merriweather Sans, Roboto Sans
 // @import url('https://fonts.googleapis.com/css?family=Merriweather+Sans');
 
 /* FONTS */
-// .font-face(Merriweather Sans, '../fonts/merriweather-sans-v10-latin_latin-ext-300', 300, normal);
-// .font-face(Merriweather Sans, '..fonts/merriweather-sans-v10-latin_latin-ext-300italic', 300, italic);
-
-@font-face {
-  font-family: 'Merriweather Sans';
-  src: local('Merriweather Sans'), local('MerriweatherSans-Regular'), url('../fonts/merriweather-sans-v10-latin_latin-ext-300.woff') format('woff');
-  src: local('Merriweather Sans'), local('MerriweatherSans-Regular'), url('../fonts/merriweather-sans-v10-latin_latin-ext-300.woff2') format('woff2');
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Merriweather Sans';
-  src: url('../fonts/merriweather-sans-v10-latin_latin-ext-300italic.woff') format('woff');
-  src: url('../fonts/merriweather-sans-v10-latin_latin-ext-300italic.woff2') format('woff2');
-  font-weight: 300;
-  font-style: italic;
-}
+@import (reference) 'fontface-mixin.less';
+.font-face('Merriweather Sans', '../fonts/merriweather-sans-v10-latin_latin-ext-300', 300, normal);
+.font-face('Merriweather Sans', '..fonts/merriweather-sans-v10-latin_latin-ext-300italic', 300, italic);
 
 body {
   margin: 0;
