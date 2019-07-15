@@ -1,4 +1,5 @@
 {
     "watchFolder": "less",
-    "outputFolder": "styles"
+    "outputFolder": "styles",
+    "mainFile": "style.less"
 }

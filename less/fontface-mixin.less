@@ -11,11 +11,11 @@
   @font-face {
     font-family: @font-family;
     src: url('@{file-path}.eot');
-    src: url('@{file-path}.eot?#iefix') format('embedded-opentype');
-    src: url('@{file-path}.woff') format('woff');
-    src: url('@{file-path}.woff2') format('woff2');
-    src: url('@{file-path}.ttf') format('truetype');
-    src: url('@{file-path}.svg#@{file-path}') format('svg');
+    src: url('@{file-path}.eot?#iefix') format('embedded-opentype'),
+      url('@{file-path}.woff') format('woff'),
+      url('@{file-path}.woff2') format('woff2'),
+      url('@{file-path}.ttf') format('truetype'),
+      url('@{file-path}.svg#@{file-path}') format('svg');
     font-weight: @font-weight;
     font-style: @font-style;
   }
