@@ -5,11 +5,19 @@
     Font Family: Merriweather Sans, Roboto Sans
 */
 
+// Colours
+@primary: #1a733f;
+@secondary: #183824;
+@accent: #8dd1e8;
+@white: #ffffff;
+@bg-offwhite: #f8f8ff;
+@bg-dark: #222222;
+
 @import url('https://fonts.googleapis.com/css?family=Merriweather+Sans');
 
 body {
     margin: 0;
-    background-color: #f8f8ff;
+    background-color: @bg-offwhite;
     font-family: 'Merriweather Sans', Arial, sans-serif;
     font-size: 1em;
 }
@@ -18,12 +26,12 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #1a733f;
-    color: #fff;
+    background-color: @primary;
+    color: @white;
     z-index: 1;
 }
 .nav-top a {
-    color: #fff;
+    color: @white;
     text-decoration: none;
 }
 .nav-part {
@@ -36,7 +44,7 @@ body {
 }
 .nav-part:hover {
     cursor: pointer;
-    background-color: #183824;
+    background-color: @secondary;
 }
 
 .content {
@@ -57,8 +65,8 @@ body {
     border-radius: 3px;
     padding: 10px;
     width: 280px;
-    background-color: #1a733f;
-    color: white;
+    background-color: @primary;
+    color: @white;
     text-transform: uppercase;
     margin-top: 20px;
     cursor: pointer;
@@ -88,9 +96,9 @@ body {
     box-sizing: border-box;
     text-align: center;
     transform: translate(-50%, 0);
-    color: white;
+    color: @white;
     cursor: pointer;
-    background-color: #1a733f;
+    background-color: @primary;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
 }
@@ -113,7 +121,7 @@ body {
 }
 
 .footer {
-    background-color: #222;
+    background-color: @bg-dark;
     color: rgba(255, 255, 255, 0.7);
 }
 
