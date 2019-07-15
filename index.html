@@ -2,6 +2,10 @@
 <html>
     <!-- metatags & information -->
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="shortcut icon" href="fff_logo.ico" type="image/x-icon" />
+
         <title>Fridays for Future</title>    
         <!-- Stylesheets -->
         <link rel="stylesheet" type="text/css" href="style.css">
@@ -12,22 +16,29 @@
     <body>
         <nav class="nav-top">
             <div class="wrapper">
-                <div class="nav-part home">fridaysforfuture</div>
+                <a class="nav-part home" onclick="ScrollTo('landing')">fridaysforfuture</a>
                 <div class="nav-part join">join</div>
                 <div class="nav-part list">list</div>
                 <div class="nav-part about">about</div>
             </div>
         </nav>
         <div class="content">
-            <div class="full-body">
+            <div id="landing" class="full-body">
                 <div class="logo-center">
                     <img src="fff_logo.png" />
                     <br />
-                    <button class="cta">find a strike near you</button>
+                    <a href="https://www.fridaysforfuture.org/events/map">
+                        <button class="cta">find a strike near you</button>
+                    </a>
+                </div>
+                <div class="full-body-read-more" onclick="ScrollTo('press')">
+                    Read More
+                    <br />
+                    <i class="fas fa-angle-down fa-2x"></i>
                 </div>
             </div>
             <div class="main wrapper">
-                <div class="main-content">
+                <div class="main-content" id="press">
                     <h2>Press release Fridaysforfuture 21 March 2019</h2>
                     During the week of March 15, there were at least 1.6 million strikers on all 7 continents, in more thn 125 countries and in well over 2000 places.<br>
                     The 1.6million strikers is data gathered by FFF for 40% of countries. <br>
@@ -97,13 +108,13 @@
                 <div class="footer-content">
                     <h3>Follow us on Social Media</h3>
                     <div class="footer-social-container">
-                        <a href="#" class="footer-social social-facebook">
+                        <a href="https://www.facebook.com/Fridaysforfuture.org/" class="footer-social social-facebook">
                             <i class="fab fa-facebook fa-2x"></i>
                         </a>
-                        <a href="#" class="footer-social social-twitter">
+                        <a href="https://twitter.com/Fridays4future" class="footer-social social-twitter">
                             <i class="fab fa-twitter fa-2x"></i>
                         </a>
-                        <a href="#" class="footer-social">
+                        <a href="https://www.instagram.com/fridaysforfuture" class="footer-social">
                             <i class="fab fa-instagram fa-2x social-instagram"></i>
                         </a>
                     </div>
@@ -111,5 +122,6 @@
                 </div>
             </div>
         </footer>
+        <script src="script.js"></script>
     </body>
 </html>
