@@ -1,20 +1,48 @@
 /*
-    Primary Colour: #1a733f
-    Secondary Colour: #8dd1e8
-    Accent Colour: #73231a
-    Font Family: Merriweather Sans, Roboto Sans
+Primary Colour: #1a733f
+Secondary Colour: #8dd1e8
+Accent Colour: #73231a
+Font Family: Merriweather Sans, Roboto Sans
 */
+/* FONTS */
 @font-face {
   font-family: 'Merriweather Sans';
+  src: url('../fonts/merriweather-sans-v10-latin_latin-ext-300.eot');
+  src: url('../fonts/merriweather-sans-v10-latin_latin-ext-300.eot?#iefix') format('embedded-opentype'), url('../fonts/merriweather-sans-v10-latin_latin-ext-300.woff') format('woff'), url('../fonts/merriweather-sans-v10-latin_latin-ext-300.woff2') format('woff2'), url('../fonts/merriweather-sans-v10-latin_latin-ext-300.ttf') format('truetype'), url('../fonts/merriweather-sans-v10-latin_latin-ext-300.svg#../fonts/merriweather-sans-v10-latin_latin-ext-300') format('svg');
+  font-weight: 300;
   font-style: normal;
-  font-weight: 400;
-  src: local('Merriweather Sans'), local('MerriweatherSans-Regular'), url(https://fonts.gstatic.com/s/merriweathersans/v10/2-c99IRs1JiJN1FRAMjTN5zd9vgsFHX1QjA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Merriweather Sans';
+  src: url('../fonts/merriweather-sans-v10-latin_latin-ext-300italic.eot');
+  src: url('../fonts/merriweather-sans-v10-latin_latin-ext-300italic.eot?#iefix') format('embedded-opentype'), url('../fonts/merriweather-sans-v10-latin_latin-ext-300italic.woff') format('woff'), url('../fonts/merriweather-sans-v10-latin_latin-ext-300italic.woff2') format('woff2'), url('../fonts/merriweather-sans-v10-latin_latin-ext-300italic.ttf') format('truetype'), url('../fonts/merriweather-sans-v10-latin_latin-ext-300italic.svg#../fonts/merriweather-sans-v10-latin_latin-ext-300italic') format('svg');
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Jost';
+  src: url('../fonts/Jost-600-Semi.eot');
+  src: url('../fonts/Jost-600-Semi.eot?#iefix') format('embedded-opentype'), url('../fonts/Jost-600-Semi.woff') format('woff'), url('../fonts/Jost-600-Semi.woff2') format('woff2'), url('../fonts/Jost-600-Semi.ttf') format('truetype'), url('../fonts/Jost-600-Semi.svg#../fonts/Jost-600-Semi') format('svg');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Jost';
+  src: url('../fonts/Jost-700-Bold.eot');
+  src: url('../fonts/Jost-700-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/Jost-700-Bold.woff') format('woff'), url('../fonts/Jost-700-Bold.woff2') format('woff2'), url('../fonts/Jost-700-Bold.ttf') format('truetype'), url('../fonts/Jost-700-Bold.svg#../fonts/Jost-700-Bold') format('svg');
+  font-weight: 700;
+  font-style: normal;
 }
 body {
   margin: 0;
   background-color: #f8f8ff;
-  font-family: 'Merriweather Sans', Arial, sans-serif;
+  font-family: 'Merriweather Sans';
   font-size: 1em;
+}
+h1,
+h2 {
+  font-family: 'Jost';
+  font-weight: 700;
 }
 .nav-top {
   position: fixed;
@@ -23,6 +51,8 @@ body {
   background-color: #1a733f;
   color: #ffffff;
   z-index: 1;
+  font-family: 'Jost';
+  font-weight: 600;
 }
 .nav-top a {
   color: #ffffff;
@@ -45,7 +75,7 @@ body {
 }
 .full-body {
   height: calc(100vh);
-  background: url('fff_strike.jpg') no-repeat center center fixed;
+  background: url('../fff_strike.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
