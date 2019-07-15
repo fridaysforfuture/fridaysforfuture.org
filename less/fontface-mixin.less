@@ -1,0 +1,38 @@
+/**
+ * @font-face LESS Mixin
+ * use: .font-face(
+ *   @font-family, // name
+ *   @file-path,   // absolute/relative URL to font files
+ *   @font-weight, // light/normal/bold/inherit | 300/400/700
+ *   @font-style   // italic/normal/inherit
+ * )
+ */
+.font-face(@font-family, @file-path, @font-weight, @font-style) {
+  @font-face {
+    font-family: @font-family;
+    src: url('@{file-path}.eot');
+    src: url('@{file-path}.eot?#iefix') format('embedded-opentype');
+    src: url('@{file-path}.woff') format('woff');
+    src: url('@{file-path}.woff2') format('woff2');
+    src: url('@{file-path}.ttf') format('truetype');
+    src: url('@{file-path}.svg#@{file-path}') format('svg');
+    font-weight: @font-weight;
+    font-style: @font-style;
+  }
+}
+
+/**
+ * font LESS Mixin
+ * use: .font(
+ *   @font-family, // name
+ *   @file-size,   // any unit/inherit
+ *   @font-weight, // light/normal/bold/inherit | 300/400/700
+ *   @font-style   // italic/normal/inherit
+ * )
+ */
+.font(@font-family, @font-size, @font-weight, @font-style){
+  font-family: @font-family;
+  font-size: @font-size;
+  font-weight: @font-weight;
+  font-style: @font-style;
+}
