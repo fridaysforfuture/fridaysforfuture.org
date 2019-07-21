@@ -2,6 +2,7 @@
 This repository is used to develop and maintain the international website of FridaysForFuture, a grassroots movement urging politicians and media to treat the climate crisis as a serious threat.
 
 ## Prerequisites
+[Install Jekyll](https://jekyllrb.com/docs/installation/)
 The project uses the css preprocessor Less, utilizing Node.js to install and run the npm modules less and less-watch-compiler.
 
 [Install Node.js](https://nodejs.org/en/)

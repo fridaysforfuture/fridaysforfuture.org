@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <!-- metatags & information -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="shortcut icon" href="fff_logo.ico" type="image/x-icon" />
+
+        <title>Fridays for Future</title>
+        <!-- Stylesheets -->
+        <link rel="stylesheet" type="text/css" href="/styles/style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    </head>
+
+    <!-- Body & Content -->
+    <body>
+        <nav class="nav-top">
+            <div class="wrapper">
+                <a href="/" class="nav-part home" onclick="ScrollTo('landing')">fridaysforfuture</a>
+                <a href="/join" class="nav-part join">join</a>
+                <a href="/list" class="nav-part list">list</a>
+                <a href="/about" class="nav-part about">about</a>
+            </div>
+        </nav>
+        <div class="content">
+            {{ content }}
+        </div>
+        <footer class="footer">
+            <div class="footer-wrapper">
+                <div class="footer-content">
+                    <h3>Follow us on Social Media</h3>
+                    <div class="footer-social-container">
+                        <a href="https://www.facebook.com/Fridaysforfuture.org/" class="footer-social social-facebook">
+                            <i class="fab fa-facebook fa-2x"></i>
+                        </a>
+                        <a href="https://twitter.com/Fridays4future" class="footer-social social-twitter">
+                            <i class="fab fa-twitter fa-2x"></i>
+                        </a>
+                        <a href="https://www.instagram.com/fridaysforfuture" class="footer-social">
+                            <i class="fab fa-instagram fa-2x social-instagram"></i>
+                        </a>
+                    </div>
+                    <small>Copyright (c) FridaysForFuture</small>
+                </div>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
