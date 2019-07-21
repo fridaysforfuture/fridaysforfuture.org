@@ -1,3 +1,6 @@
+---
+# Ensuring Jekyll serves this
+---
 /*
 Primary Colour: #1a733f
 Secondary Colour: #8dd1e8
@@ -6,25 +9,25 @@ Font Family: Merriweather Sans, Roboto Sans
 */
 
 // Colours
-@primary: #1a733f;
-@secondary: #183824;
-@accent: #8dd1e8;
-@white: #ffffff;
-@bg-offwhite: #f8f8ff;
-@bg-dark: #222222;
+$primary: #1a733f;
+$secondary: #183824;
+$accent: #8dd1e8;
+$white: #ffffff;
+$bg-offwhite: #f8f8ff;
+$bg-dark: #222222;
 
 // @import url('https://fonts.googleapis.com/css?family=Merriweather+Sans');
 
 /* FONTS */
-@import (reference) 'fontface-mixin.less';
-.font-face('Merriweather Sans', '../fonts/merriweather-sans-v10-latin_latin-ext-300', 300, normal);
-.font-face('Merriweather Sans', '../fonts/merriweather-sans-v10-latin_latin-ext-300italic', 300, italic);
-.font-face('Jost', '../fonts/Jost-600-Semi', 600, normal);
-.font-face('Jost', '../fonts/Jost-700-Bold', 700, normal);
+@import "fontface-mixin";
+@include font-face('Merriweather Sans', '/fonts/merriweather-sans-v10-latin_latin-ext-300', 300, normal);
+@include font-face('Merriweather Sans', '/fonts/merriweather-sans-v10-latin_latin-ext-300italic', 300, italic);
+@include font-face('Jost', '/fonts/Jost-600-Semi', 600, normal);
+@include font-face('Jost', '/fonts/Jost-700-Bold', 700, normal);
 
 body {
   margin: 0;
-  background-color: @bg-offwhite;
+  background-color: $bg-offwhite;
   font-family: 'Merriweather Sans';
   font-size: 1em;
 }
@@ -38,14 +41,14 @@ h1, h2 {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: @primary;
-  color: @white;
+  background-color: $primary;
+  color: $white;
   z-index: 1;
   font-family: 'Jost';
   font-weight: 700;
 }
 .nav-top a {
-  color: @white;
+  color: $white;
   text-decoration: none;
 }
 .nav-part {
@@ -58,7 +61,7 @@ h1, h2 {
 }
 .nav-part:hover {
   cursor: pointer;
-  background-color: @secondary;
+  background-color: $secondary;
 }
 
 .content {
@@ -67,7 +70,7 @@ h1, h2 {
 
 .full-body {
   height: calc(100vh);
-  background: url('../fff_strike.jpg') no-repeat center center fixed;
+  background: url('/fff_strike.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -79,8 +82,8 @@ h1, h2 {
   border-radius: 3px;
   padding: 10px;
   width: 280px;
-  background-color: @primary;
-  color: @white;
+  background-color: $primary;
+  color: $white;
   text-transform: uppercase;
   margin-top: 20px;
   cursor: pointer;
@@ -112,9 +115,9 @@ h1, h2 {
   box-sizing: border-box;
   text-align: center;
   transform: translate(-50%, 0);
-  color: @white;
+  color: $white;
   cursor: pointer;
-  background-color: @primary;
+  background-color: $primary;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
 }
@@ -137,7 +140,7 @@ h1, h2 {
 }
 
 .footer {
-  background-color: @bg-dark;
+  background-color: $bg-dark;
   color: rgba(255, 255, 255, 0.7);
 }
 
@@ -183,4 +186,8 @@ a.footer-social {
   background: radial-gradient(circle at 33% 100%, #ff3be7 4%, #ff3be7 28%, #03ffe8 62%, #F15245 85%, #FED373);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.page-wrapper {
+  margin-top: 44px;
 }
